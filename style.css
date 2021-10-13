@@ -1,0 +1,227 @@
+/*navbar style*/
+
+nav.primary-navigation {
+  margin-left: 0 auto;
+  display: block;
+  padding: 20px 0 0 0;
+  text-align: center;
+  font-size: 25px;
+}
+
+nav.primary-navigation ul li {
+  list-style: none;
+  margin: 0 auto;
+  border-left: 4px solid red;
+  display: inline-block;
+  padding: 0 30px;
+  position: relative;
+  text-decoration: none;
+  text-align: center;
+}
+
+#border-right {
+  border-right: 4px solid red;
+}
+
+nav.primary-navigation li a {
+  color: white;
+}
+
+nav.primary-navigation li a:hover {
+  color: red;
+}
+
+a:hover {
+  color: red;
+}
+
+/*body*/
+
+body {
+  background-color: rgba(0, 0, 0, 0.904);
+  height: 100%;
+  overflow-x: hidden;
+}
+
+h2 {
+  color: white;
+  background-color: red;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  text-align: center;
+}
+
+/*input boxes*/
+
+.toevoegen input[type="text"], textarea {
+  background-color: lightgrey;
+  border-radius: 10px;
+  border: 2px;
+  width: 250px;
+}
+
+.toevoegen {
+  float: center;
+  text-align: center;
+  color: white;
+}
+
+.tijdsduur {
+  background-color: lightgrey;
+  border-radius: 10px;
+  border: 2px;
+  width: 250px;
+}
+
+img[src*="https://cdn.000webhost.com/000webhost/logo/footer-powered-by-000webhost-white2.png"] {
+  display: none;
+}
+
+a[href*="https://www.000webhost.com/?utm_source=000webhostapp&utm_campaign=000_logo&utm_medium=website&utm_content=footer_img"] {
+  display: none;
+}
+
+#filmsubmit {
+  float: center;
+}
+
+/*films styling*/
+
+.details-text h2 {
+  text-align: left;
+  background-color: red;
+  padding: 20px;
+  color: white;
+}
+
+.details-text a {
+  color: rgb(83, 212, 255);
+}
+
+.details-text {
+  color: white;
+}
+
+#album img {
+  width: 360px;
+  height: 508px;
+}
+
+/*caroussel*/
+
+.swiper-container {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 75px;
+}
+
+.swiper-slide .imgBx {
+  width: 100%;
+  height: 0;
+  padding-top: 130%;
+  position: relative;
+}
+
+.swiper-slide .imgBx img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.swiper-slide .details h3 {
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+  text-align: center;
+  line-height: 20px;
+}
+
+/*footer*/
+
+.footer-basic {
+  padding: 40px 0;
+  background-color: #333;
+  color: #4b4c4d;
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  grid-template-columns: 100%;
+}
+
+.footer-basic ul {
+  padding: 0;
+  list-style: none;
+  text-align: center;
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 0;
+}
+
+.footer-basic li {
+  padding: 0 10px;
+}
+
+.footer-basic ul a {
+  color: white;
+  text-decoration: none;
+  opacity: 0.8;
+}
+
+.footer-basic ul a:hover {
+  opacity: 1;
+}
+
+.footer-basic .social {
+  text-align: center;
+  padding-bottom: 25px;
+}
+
+.footer-basic .social>a:hover {
+  opacity: 0.9;
+}
+
+.footer-basic .copyright {
+  margin-top: 15px;
+  text-align: center;
+  font-size: 13px;
+  color: white;
+  margin-bottom: 0;
+}
+
+/*about page*/
+
+.about-text {
+  color: white;
+  text-align: center;
+}
+
+/*breadcrumbs*/
+
+ul.breadcrumb {
+  padding: 10px 16px;
+  list-style: none;
+  background: none;
+  color: rgba(211, 211, 211, 0.8);
+}
+
+ul.breadcrumb li {
+  display: inline;
+  font-size: 18px;
+}
+
+ul.breadcrumb li+li:before {
+  padding: 8px;
+  color: white;
+  content: "/\00a0";
+}
+
+ul.breadcrumb li a {
+  color: white;
+  text-decoration: none;
+}
+
+ul.breadcrumb li a:hover {
+  color: grey;
+  text-decoration: underline;
+}
