@@ -10,6 +10,7 @@
     <meta name="description" content="Vind hier alle informatie over je favoriete films.">
     <meta name="robots" content="index, follow">
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="icon" href="images/filmpje.webp">
     <link rel="stylesheet" type="text/css" href="swiper.min.css">
     <link rel="stylesheet" href="style.css">
@@ -20,13 +21,29 @@
 
 <body>
 
-    <nav role="navigation" class="primary-navigation">
-        <ul>
-            <li><a href="index.html">&nbsp;Home&nbsp;</a></li>
-            <li id="border-right"><a href="filminput.html">Toevoegen</a></li>
-        </ul>
+    <nav>
+        <div class="menu-icon">
+            <span class="fas fa-bars"></span>
+        </div>
+        <div class="logo">
+            Filmpje.nl
+        </div>
+        <div class="nav-items">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="filminput.html">Toevoegen</a></li>
+        </div>
+        <div class="search-icon">
+            <span class="fas fa-search"></span>
+        </div>
+        <div class="cancel-icon">
+            <span class="fas fa-times"></span>
+        </div>
+        <form action="#">
+            <input type="text" class="search-data" placeholder="Search" id="inputSearch" onclick="search()">
+            <button type="submit" class="fas fa-search" id="btnSearch" onclick="search()"></button>
+        </form>
     </nav>
-    
+
     <div class="main-wrapper">
         <div class="swiper-container">
             <div class="swiper-wrapper">
@@ -52,23 +69,7 @@
             </div>
         </div>
 
-                <h2 class="films-main">Films:</h2>
-                <div class="album py-4">
-                    <section class="container">
-                        <div class="row">
-                            <div class="col-md-8">
-                                <form class="form-inline" action="javascript:void(0);">
-                                    <div class="form-group mx-sm-3 mb-2">
-                                        <input type="text" class="form-control" id="inputSearch"
-                                            placeholder="Type je zoekterm" />
-                                    </div>
-                                    <button type="submit" class="btn btn-danger mb-2" id="btnSearch"
-                                        onclick="search()">Zoek</button>
-                                </form>
-                            </div>
-                        </div>
-                    </section>
-                </div>
+        <h2 class="films-main">Films:</h2>
 
         <div class="album py-3">
             <div class="container">
@@ -248,6 +249,33 @@
                 },
             });
 
+        </script>
+
+        <script>
+            const menuBtn = document.querySelector(".menu-icon span");
+            const searchBtn = document.querySelector(".search-icon");
+            const cancelBtn = document.querySelector(".cancel-icon");
+            const items = document.querySelector(".nav-items");
+            const form = document.querySelector("form");
+            menuBtn.onclick = () => {
+                items.classList.add("active");
+                menuBtn.classList.add("hide");
+                searchBtn.classList.add("hide");
+                cancelBtn.classList.add("show");
+            }
+            cancelBtn.onclick = () => {
+                items.classList.remove("active");
+                menuBtn.classList.remove("hide");
+                searchBtn.classList.remove("hide");
+                cancelBtn.classList.remove("show");
+                form.classList.remove("active");
+                cancelBtn.style.color = "#ff3d00";
+            }
+            searchBtn.onclick = () => {
+                form.classList.add("active");
+                searchBtn.classList.add("hide");
+                cancelBtn.classList.add("show");
+            }
         </script>
 
         <div class="footer-basic">

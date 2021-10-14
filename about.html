@@ -10,6 +10,7 @@
   <meta name="description" content="Vind alle informatie over je favoriete films.">
   <meta name="robots" content="index,follow">
 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
   <link rel="icon" href="images/filmpje.webp">
   <link rel="stylesheet" type="text/css" href="swiper.min.css">
   <link rel="stylesheet" href="style.css">
@@ -19,11 +20,23 @@
 
 <body>
 
-  <nav role="navigation" class="primary-navigation">
-    <ul>
-      <li><a href="index.html">&nbsp;Home&nbsp;</a></li>
-      <li id="border-right"><a href="filminput.html">Toevoegen</a></li>
-    </ul>
+  <nav>
+    <div class="menu-icon">
+      <span class="fas fa-bars"></span>
+    </div>
+    <div class="logo">
+      Filmpje.nl
+    </div>
+    <div class="nav-items">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="filminput.html">Toevoegen</a></li>
+    </div>
+    <div class="search-icon">
+      <span class="fas"></span>
+    </div>
+    <div class="cancel-icon">
+      <span class="fas fa-times" style="color: white;"></span>
+    </div>
   </nav>
 
   <ul class="breadcrumb">
@@ -41,7 +54,7 @@
         <div class="col-12 col-lg-4 mb-5">
           <img class="img-fluid" src="images/gaming.jpg" alt="gaming-pic">
         </div>
-        
+
         <div class="col-12 col-lg-7 px-5 mb-5">
           <h2 class="fw-bold mb-4">Luca Rinck</h2>
           <p>hallo, mijn naam is luca en ik ben de maker van deze website.
@@ -51,11 +64,38 @@
             <br><br>
             Met deze website wil ik mensen helpen om makkelijk en snel een film uit te zoeken of mischien wil je zelf
             wel je kennis delen door
-            een film toe te voegen wat natuurlijk ook kan.</p>
+            een film toe te voegen wat natuurlijk ook kan.
+          </p>
         </div>
       </div>
     </div>
 
+    <script>
+      const menuBtn = document.querySelector(".menu-icon span");
+      const searchBtn = document.querySelector(".search-icon");
+      const cancelBtn = document.querySelector(".cancel-icon");
+      const items = document.querySelector(".nav-items");
+      const form = document.querySelector("form");
+      menuBtn.onclick = () => {
+          items.classList.add("active");
+          menuBtn.classList.add("hide");
+          searchBtn.classList.add("hide");
+          cancelBtn.classList.add("show");
+      }
+      cancelBtn.onclick = () => {
+          items.classList.remove("active");
+          menuBtn.classList.remove("hide");
+          searchBtn.classList.remove("hide");
+          cancelBtn.classList.remove("show");
+          form.classList.remove("active");
+          cancelBtn.style.color = "#ff3d00";
+      }
+      searchBtn.onclick = () => {
+          form.classList.add("active");
+          searchBtn.classList.add("hide");
+          cancelBtn.classList.add("show");
+      }
+  </script>
 
     <div class="footer-basic">
       <footer>
