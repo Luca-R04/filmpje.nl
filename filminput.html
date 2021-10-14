@@ -31,62 +31,63 @@
         <li>Toevoegen</li>
     </ul>
 
-    <form class="toevoegen">
-        <h2>Beschrijf de film die u wilt toevoegen.</h2>
+    <div class="flex-wrapper">
+        <form class="toevoegen">
+            <h2>Beschrijf de film die u wilt toevoegen.</h2>
 
-        <label for="titel"></label>
-        <input type="text" id="titel" name="titel" placeholder="TITEL">
+            <label for="titel"></label>
+            <input type="text" id="titel" name="titel" placeholder="TITEL">
 
-        <br><br>
+            <br><br>
 
-        <label for="tijdsduur"></label>
-        <input type="number" class="tijdsduur" id="duur" name="duur" placeholder="TIJDSDUUR" min="0" max="600">
+            <label for="tijdsduur"></label>
+            <input type="number" class="tijdsduur" id="duur" name="duur" placeholder="TIJDSDUUR" min="0" max="600">
 
-        <br><br>
+            <br><br>
 
-        <label for="datum">Release datum:</label>
-        <input type="date" id="datum" name="datum">
+            <label for="datum">Release datum:</label>
+            <input type="date" id="datum" name="datum">
 
-        <br>
+            <br>
 
-        <label for="beschrijving"></label><br>
-        <textarea id="beschrijving" name="beschrijving" cols="30" rows="10" placeholder="BESCHRIJVING..."></textarea>
+            <label for="beschrijving"></label><br>
+            <textarea id="beschrijving" name="beschrijving" cols="30" rows="10"
+                placeholder="BESCHRIJVING..."></textarea>
 
-        <br>
+            <br>
 
-        <label for="imgInp">Voeg een afbeelding toe:</label><br>
-        <input accept="image/*" type='file' id="imgInp" alt="img toevoegen"/>
+            <label for="imgInp">Voeg een afbeelding toe:</label><br>
+            <input accept="image/*" type='file' id="imgInp" alt="img toevoegen" />
 
-        <br><br>
+            <br><br>
 
-        <img id="preview" src="#" alt="Voorbeeld"/>
+            <img id="preview" src="#" alt="Voorbeeld" />
 
-        <br><br><br>
+            <br><br><br>
 
-        <input type="submit" value="Film toevoegen" id="filmsubmit">
+            <input type="submit" value="Film toevoegen" id="filmsubmit">
 
 
-    </form>
+        </form>
 
-    <br><br><br>
-
-    <div class="footer-basic">
-        <footer>
-            <div class="social">
-                <a href="https://twitter.com/avanshogeschool"><img src="images/twitter.webp" alt="Twitter"><i
-                        class="icon ion-social-twitter"></i></a>
-                <a href="https://nl-nl.facebook.com/avans/"><img src="images/facebook.webp" alt="Facebook"><i
-                        class="icon ion-social-facebook"></i></a>
-                <a href="https://www.instagram.com/avanshogeschool/?hl=nl"><img src="images/instagram.webp"
-                        alt="Instagram"><i class="icon ion-social-instagram"></i></a>
-            </div>
-            <ul class="list-inline">
-                <li class="list-inline-item"><a href="index.html">Home</a></li>
-                <li class="list-inline-item"><a href="filminput.html">Toevoegen</a></li>
-                <li class="list-inline-item"><a href="about.html">About</a></li>
-            </ul>
-            <p class="copyright">filmpje.nl © 2021</p>
-        </footer>
+        <div class="footer-basic">
+            <footer>
+                <div class="social">
+                    <a href="https://twitter.com/avanshogeschool"><img src="images/twitter.webp" alt="Twitter"><i
+                            class="icon ion-social-twitter"></i></a>
+                    <a href="https://nl-nl.facebook.com/avans/"><img src="images/facebook.webp" alt="Facebook"><i
+                            class="icon ion-social-facebook"></i></a>
+                    <a href="https://www.instagram.com/avanshogeschool/?hl=nl"><img src="images/instagram.webp"
+                            alt="Instagram"><i class="icon ion-social-instagram"></i></a>
+                </div>
+                <ul class="list-inline">
+                    <li class="list-inline-item"><a href="index.html">Home</a></li>
+                    <li class="list-inline-item"><a href="filminput.html">Toevoegen</a></li>
+                    <li class="list-inline-item"><a href="about.html">About</a></li>
+                </ul>
+                <p class="copyright">filmpje.nl © 2021</p>
+            </footer>
+        </div>
     </div>
 
     <div>
