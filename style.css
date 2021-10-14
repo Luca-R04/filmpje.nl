@@ -43,7 +43,7 @@ body {
   overflow-x: hidden;
 }
 
-h2 {
+.films-main {
   color: white;
   background-color: red;
   padding-top: 15px;
@@ -190,9 +190,9 @@ h2 {
 
 /*about page*/
 
-.about-text {
+.about-text{
   color: white;
-  text-align: center;
+  text-align: left;
 }
 
 /*breadcrumbs*/
