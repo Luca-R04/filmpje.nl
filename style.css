@@ -2,20 +2,15 @@
 
 nav.primary-navigation {
   margin-left: 0 auto;
-  display: block;
   padding: 20px 0 0 0;
   text-align: center;
   font-size: 25px;
 }
 
 nav.primary-navigation ul li {
-  list-style: none;
-  margin: 0 auto;
   border-left: 4px solid red;
   display: inline-block;
   padding: 0 30px;
-  position: relative;
-  text-decoration: none;
   text-align: center;
 }
 
@@ -28,10 +23,6 @@ nav.primary-navigation li a {
 }
 
 nav.primary-navigation li a:hover {
-  color: red;
-}
-
-a:hover {
   color: red;
 }
 
@@ -79,25 +70,26 @@ body {
 
 /*films styling*/
 
-.details-text h2 {
+.details-wrapper h2 {
   text-align: left;
   background-color: red;
   padding: 20px;
   color: white;
 }
 
-.details-text a {
+.details-wrapper a {
   color: rgb(83, 212, 255);
 }
 
-.details-text {
+.details-wrapper {
   color: white;
+  overflow: hidden;
 }
 
-#album img {
-  width: 360px;
-  height: 508px;
+.details-wrapper img{
+  margin-right: 20px;
 }
+
 
 /*caroussel*/
 
@@ -143,27 +135,17 @@ body {
   background-color: #333;
   color: #4b4c4d;
   min-height: 100%;
-  display: grid;
-  grid-template-rows: auto 1fr auto;
-  grid-template-columns: 100%;
 }
 
 .footer-basic ul {
-  padding: 0;
-  list-style: none;
   text-align: center;
   font-size: 18px;
-  line-height: 1.6;
   margin-bottom: 0;
 }
 
-.footer-basic li {
-  padding: 0 10px;
-}
-
 .footer-basic ul a {
+  padding: 0 10px;
   color: white;
-  text-decoration: none;
   opacity: 0.8;
 }
 
@@ -192,7 +174,6 @@ body {
 
 .about-text{
   color: white;
-  text-align: left;
 }
 
 /*breadcrumbs*/
