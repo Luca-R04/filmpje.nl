@@ -168,7 +168,7 @@ body {
 }
 
 .footer-basic ul a:hover {
-  opacity: 1;
+  color: rgb(236, 98, 98);
 }
 
 .footer-basic .social {
@@ -177,7 +177,7 @@ body {
 }
 
 .footer-basic .social>a:hover {
-  opacity: 0.9;
+  opacity: 0.75;
 }
 
 .footer-basic .copyright {
