@@ -42,6 +42,10 @@ body {
   text-align: center;
 }
 
+.films-li{
+  display: inline-block;
+}
+
 /*input boxes*/
 
 .toevoegen input[type="text"], textarea {
