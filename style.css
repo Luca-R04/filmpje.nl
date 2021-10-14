@@ -42,8 +42,25 @@ body {
   text-align: center;
 }
 
-.films-li{
+.films-li {
   display: inline-block;
+}
+
+/* Scroll bar */
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #dfdfdf;
+  border-radius: 10px;
 }
 
 /*input boxes*/
@@ -90,10 +107,9 @@ body {
   overflow: hidden;
 }
 
-.details-wrapper img{
+.details-wrapper img {
   margin-right: 20px;
 }
-
 
 /*caroussel*/
 
@@ -176,7 +192,7 @@ body {
 
 /*about page*/
 
-.about-text{
+.about-text {
   color: white;
 }
 
