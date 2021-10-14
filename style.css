@@ -131,7 +131,7 @@ h2 {
 
 /*footer*/
 
-.flex-wrapper {
+.main-wrapper {
   display: flex;
   min-height: 100vh;
   flex-direction: column;
