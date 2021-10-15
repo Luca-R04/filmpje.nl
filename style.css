@@ -6,24 +6,12 @@ body {
   overflow-x: hidden;
 }
 
-.films-main {
-  color: white;
-  background-color: red;
-  padding-top: 15px;
-  padding-bottom: 15px;
-  text-align: center;
-}
-
 .films-bar {
   background-color: red;
   color: white;
   text-align: center;
   padding-top: 15px;
   padding-bottom: 15px;
-}
-
-.films-li {
-  display: inline-block;
 }
 
 /* Scroll bar */
