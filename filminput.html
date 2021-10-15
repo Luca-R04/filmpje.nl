@@ -49,38 +49,46 @@
             <h2>Beschrijf de film die u wilt toevoegen.</h2>
 
             <label for="titel"></label>
-            <input type="text" id="titel" name="titel" placeholder="TITEL">
+            <input type="text" id="titel" name="titel" placeholder="Titel">
 
             <br><br>
 
             <label for="tijdsduur"></label>
-            <input type="number" class="tijdsduur" id="duur" name="duur" placeholder="TIJDSDUUR" min="0" max="600">
+            <input type="number" class="tijdsduur" id="duur" name="duur" placeholder="Tijdsduur" min="0" max="600">
 
             <br><br>
 
             <label for="datum">Release datum:</label>
             <input type="date" id="datum" name="datum">
 
+            <br><br>
+
+            <label for="acteur"></label>
+            <input type="text" id="acteur" name="acteur" placeholder="Acteur">
+
+            <br><br>
+
+            <label for="rating"></label>
+            <input type="text" id="rating" name="rating" placeholder="Rating">
+
             <br>
 
             <label for="beschrijving"></label><br>
             <textarea id="beschrijving" name="beschrijving" cols="30" rows="10"
-                placeholder="BESCHRIJVING..."></textarea>
+                placeholder="Beschrijving..."></textarea>
 
             <br>
 
             <label for="imgInp">Voeg een afbeelding toe:</label><br>
-            <input accept="image/*" type='file' id="imgInp" alt="img toevoegen" />
+            <input accept="image/*" type='file' id="imgInp" alt="img toevoegen">
 
             <br><br>
 
-            <img id="preview" src="#" alt="Voorbeeld" />
+            <img id="preview" src="#" alt="Voorbeeld">
 
             <br><br><br>
 
             <input type="submit" value="Film toevoegen" id="filmsubmit">
-
-
         </form>
 
         <div class="footer-basic">

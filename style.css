@@ -56,6 +56,7 @@ body {
   float: center;
   text-align: center;
   color: white;
+  padding-bottom: 10px;
 }
 
 .tijdsduur {
@@ -88,7 +89,7 @@ body {
 }
 
 .details-wrapper img {
-  margin-right: 20px;
+  overflow: hidden;
 }
 
 /*caroussel*/
@@ -420,6 +421,12 @@ nav .menu-icon span, nav .cancel-icon, nav .search-icon {
 nav .logo.space {
   color: red;
   padding: 0 5px 0 0;
+}
+
+@media (min-width: 980px) {
+  .details-text {
+    margin-left: 3%;
+  }
 }
 
 @media (max-width: 980px) {
